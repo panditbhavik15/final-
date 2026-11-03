@@ -36,19 +36,41 @@ Three ways that work:
 
 ```text
 final-/
+├── README.md
 ├── DBMS_2BTCO302_PYQ_Answer_Key.pdf
 ├── OOP_Cpp_2BTCO303_PYQ_Answer_Key.pdf
 ├── Digital_Fundamentals_2BTES301_PYQ_Answer_Key.pdf
 ├── Data_Structures_2BTCO301_Question_Bank_Answer_Key.pdf
-└── sources/
-    ├── DBMS_2BTCO302_PYQ_Answer_Key.md
-    ├── OOP_Cpp_2BTCO303_PYQ_Answer_Key.md
-    ├── Digital_Fundamentals_2BTES301_PYQ_Answer_Key.md
-    └── Data_Structures_2BTCO301_Question_Bank_Answer_Key.md
+├── sources/
+│   ├── DBMS_2BTCO302_PYQ_Answer_Key.md
+│   ├── OOP_Cpp_2BTCO303_PYQ_Answer_Key.md
+│   ├── Digital_Fundamentals_2BTES301_PYQ_Answer_Key.md
+│   └── Data_Structures_2BTCO301_Question_Bank_Answer_Key.md
+└── code/
+    ├── c/                     21 C programs from the Data Structures book
+    ├── verify_ds.py           the engine that produces every quoted number
+    ├── verification_ds.txt    its 557-line output, zero failing checks
+    ├── run_c.py               writes and compiles the 21 C programs
+    └── c_compile_check.txt    the 21/21 compile log
 ```
 
 The PDFs are print-ready A4 with a proper monospace font, so the code listings stay aligned. The
 Markdown files are the same content, editable and free to fork.
+
+## Re-run the checks yourself
+
+Nothing here asks you to trust a number. From a clone:
+
+```bash
+python code/verify_ds.py     # rewrites every worked answer; expect 557 lines, no False
+python code/run_c.py         # needs clang on PATH, or set CLANG=/path/to/clang
+```
+
+`verify_ds.py` is pure standard-library Python — no installs. It re-runs the notes' own worked
+examples (sparse-matrix counts, address arithmetic, K-map groupings, hash collision probes,
+tree counts, sort traces, infix conversions) and prints a mismatch instead of hiding one.
+`run_c.py` regenerates the 21 programs in `code/c/` and compiles each with
+`clang -std=c99 -Wall -Wextra`.
 
 ## Data Structures note
 
