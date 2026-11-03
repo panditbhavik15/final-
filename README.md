@@ -1,6 +1,6 @@
 # Semester 4 answer keys — Saurashtra University
 
-Four complete question-and-answer books for Semester 3 B.Tech CSE. Each one carries the
+Four complete question-and-answer books for B.Tech CSE. Each one carries the
 previous-year paper analysis where papers were available, every question answered in full,
 a formula and complexity revision sheet, and the errata found while verifying the answers.
 
