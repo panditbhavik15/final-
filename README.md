@@ -1,4 +1,4 @@
-# Semester 3 answer keys — Saurashtra University
+# Semester 3 answer keys — Dr. Saurashtra University
 
 Four complete question-and-answer books for B.Tech CSE. Each one carries the
 previous-year paper analysis where papers were available, every question answered in full,
@@ -85,5 +85,3 @@ exam pattern is borrowed from three real Semester 3 papers, not confirmed for 2B
 - All 21 C programs compile clean under `-Wall -Wextra`. Device Guard blocks running freshly
   built executables on this machine, so printed output comes from the equivalent executed model.
 - Each PDF was checked for page count, embedded fonts, missing strings and rendering artefacts.
-
-*Built 3 November 2026.*
